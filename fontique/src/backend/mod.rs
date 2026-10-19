@@ -7,6 +7,19 @@
 #[path = "dwrite.rs"]
 mod system;
 
+// Exercise the Android XML parser and scanned-font resolution on host CI too.
+#[cfg(all(
+    test,
+    feature = "std",
+    not(any(target_os = "android", target_family = "wasm"))
+))]
+#[path = "android.rs"]
+#[allow(
+    dead_code,
+    reason = "Host tests only exercise the Android parser and fallback lookup"
+)]
+mod android_tests;
+
 #[cfg(all(feature = "system", target_vendor = "apple"))]
 #[path = "coretext.rs"]
 mod system;

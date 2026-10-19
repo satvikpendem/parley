@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Relevant fallback entries from an Android 11/API 30 system fonts.xml.
+     The test TTC uses existing repository fonts, not Android font binaries. -->
+<familyset version="23">
+    <family lang="zh-Hans">
+        <font weight="400" style="normal" index="2">NotoSansCJK-Regular.ttc</font>
+        <font weight="400" style="normal" index="2" fallbackFor="serif">NotoSerifCJK-Regular.ttc</font>
+    </family>
+    <family lang="zh-Hant,zh-Bopo">
+        <font weight="400" style="normal" index="3">NotoSansCJK-Regular.ttc</font>
+        <font weight="400" style="normal" index="3" fallbackFor="serif">NotoSerifCJK-Regular.ttc</font>
+    </family>
+    <family lang="ja">
+        <font weight="400" style="normal" index="0">NotoSansCJK-Regular.ttc</font>
+        <font weight="400" style="normal" index="0" fallbackFor="serif">NotoSerifCJK-Regular.ttc</font>
+    </family>
+    <family lang="ko">
+        <font weight="400" style="normal" index="1">NotoSansCJK-Regular.ttc</font>
+        <font weight="400" style="normal" index="1" fallbackFor="serif">NotoSerifCJK-Regular.ttc</font>
+    </family>
+    <family lang="und-Zsye">
+        <font weight="400" style="normal">NotoColorEmoji.ttf</font>
+    </family>
+</familyset>
